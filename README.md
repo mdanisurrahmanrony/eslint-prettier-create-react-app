@@ -42,6 +42,7 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
     },
     "eslint.alwaysShowStatus": true,
     "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "Dracula"
 }
 ```
 
