@@ -4,19 +4,19 @@
 npx create-react-app eslint-prettier-create-react-app
 ```
 
-#### 2. Install plugins
+#### 2. Install `Visual Studio Code` plugins
 
 ```
 ESLint by Dirk Baeumer, Prettier - Code formatter by Prettier, Dracula Official Theme (optional)
 ```
 
-#### 3. Install Dev Dependencies
+#### 3. Install dev dependencies
 
 ```
 yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 ```
 
-#### 4. Create a .eslintrc file in the project root and enter the below contents:
+#### 4. Create `.eslintrc` file in the project root and enter the below contents:
 
 ```
 {
@@ -32,7 +32,7 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 }
 ```
 
-#### 5. Follow the below settings for `User Settings` of VS Code
+#### 5. Follow the below settings for `User Settings` of `Visual Studio Code`
 
 ```
 {
@@ -46,21 +46,28 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 }
 ```
 
-#### 6. Install `husky lint-staged` Dev Dependency
+#### 6. Install `husky lint-staged` dev dependency
 
 ```
 yarn add husky lint-staged -D
 ```
 
-#### 7. Install `pretty-quick` Dev Dependency
+#### 7. Install `pretty-quick` dev dependency
 
 ```
 yarn add pretty-quick -D
 ```
 
-#### 8. References
+#### 8. Add `precommit` scripts inside `package.json` file
+
+```
+  "scripts": {
+    "precommit": "pretty-quick --staged"
+  }
+```
+
+#### 9. References
 
 ```
 https://www.youtube.com/watch?v=bfyI9yl3qfE
-https://www.youtube.com/watch?v=C7D4nMvbdFQ
 ```
