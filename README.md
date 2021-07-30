@@ -20,7 +20,15 @@ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 
 ```
 {
-    "extends": ["react-app", "plugin:prettier/recommended"]
+    "extends": ["react-app", "plugin:prettier/recommended"],
+    "rules": {
+        "prettier/prettier": [
+          "error",
+          {
+            "singleQuote": true
+          }
+        ]
+      }
 }
 ```
 
